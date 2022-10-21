@@ -13,7 +13,8 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+    const unsubscribe = auth.onAuthStateChanged(
+      (userAuth) => {
       if (userAuth) {
         //LoggedIn
         dispatch(
@@ -24,7 +25,7 @@ function App() {
         );
       } else {
         //Logged Out
-        dispatch(logout);
+        dispatch(logout());
       }
     });
     return unsubscribe;
