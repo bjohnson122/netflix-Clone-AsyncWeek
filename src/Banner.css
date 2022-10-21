@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  height: 450px;
+  height: 445px;
   color: white;
   object-fit: contain;
 }
@@ -34,6 +34,7 @@
         rgba(37,37,37,0.61),
         #111
     );
+    background-position-y: 0vh;
 }
 
 .banner__button {
